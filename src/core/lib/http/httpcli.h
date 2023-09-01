@@ -55,7 +55,10 @@
 #include "src/core/lib/uri/uri_parser.h"
 
 // User agent this library reports
-#define GRPC_HTTPCLI_USER_AGENT "Mozilla/5.0 (Linux; Android 13; KB2000 Build/RKQ1.211119.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36"
+#define GRPC_HTTPCLI_USER_AGENT                                          \
+  "Mozilla/5.0 (Linux; Android 13; KB2000 Build/RKQ1.211119.001) "       \
+  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile " \
+  "Safari/537.36"
 
 // override functions return 1 if they handled the request, 0 otherwise
 typedef int (*grpc_httpcli_get_override)(const grpc_http_request* request,
